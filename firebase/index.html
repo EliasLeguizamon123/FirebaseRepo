@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+
+  </head>
+  <body>
+    <div class="row main-container middle-xs center-xs">
+      <div class="col-md-8 col-sm-10 col-xs-11">
+        <div class="box">
+          <div class="card animated slideInDown">
+            <header class="main-header">
+              <nav class="main-nav">
+                <p class="ubuntu-textW">Registrarse</p>
+              </nav>
+            </header>
+            <article class="body">
+              <header class="text-center">
+                <div class="tableCenter">
+                  <input type="email" id="email" placeholder="Coloque su email..." />
+                  <input type="password" id="pass" placeholder="Ingrese su password..." />
+                  <button type="button" onclick="enviar()">Registrarse</button>
+               </div>
+              </header>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <small>Copyright by <a href="https://github.com/EliasLeguizamon123">Elías Leguizamón</a></small>
+    </footer>
+
+
+        <!--Conexion con BD de FIREBASE y llamada a la APP como tambien a AUTH-->
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDPzkzyb-Bcfrh7iFqU1ZgZEf9skZh_CHw",
+        authDomain: "usuarios-9a467.firebaseapp.com",
+        databaseURL: "https://usuarios-9a467.firebaseio.com",
+        projectId: "usuarios-9a467",
+        storageBucket: "",
+        messagingSenderId: "18070775112",
+        appId: "1:18070775112:web:cfee2c7a3c8682a4973f7d",
+        measurementId: "G-Y2BGWDWJ8C"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>
